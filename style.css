@@ -1,0 +1,179 @@
+@media (max-width: 480px){
+    body {
+        font-family:"sans-serif";
+        margin: 0;
+      }
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header img {
+        height: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .searchbar{
+        background-color: grey;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-spacing: 10px;
+    }
+    header i{
+        justify-content: space-evently;
+    }
+    main{
+        width: 100%;
+    }
+    section{
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+    .searchentete{
+        background-color: #F2F2F2;
+    }
+    section h1 {
+        text-align: center;
+        font-size: 30px;
+         margin: 80px;
+    }
+    section p{
+        text-align:center;
+        text-align: center;
+        font-size: 20px;
+         margin: 35px;
+    }
+    .searchexplorer{
+        color: white;
+        background-color: rgb(146,61,186);
+        box-shadow: 0 0 20px #0000002e;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition-duration: 0.1s;
+        height: 40px;
+        margin: 100px;
+    }
+    .searchexplorer :hover{
+        transition-duration: 0.1s;
+    }
+    .searchexplorer p{
+        padding-top: 8px;
+    }
+    .searchfonctionnement{
+        background-color: white;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .searchfonctfonct{
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F2F2F2;
+        box-shadow: 0 0 20px #0000002e;
+        border: 1px solid #f2f2f2;
+        border-radius: 2rem;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+        transition-duration: 0.1s;
+    }
+    .searchfonctfonct :hover{
+        color:rgb(186, 61, 165)
+    }
+    .searchfoncfoncWrapicon{
+        background-color: rgb(146,61,186);
+        border-radius: 100%;
+        min-height: 2rem;
+        min-width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         margin-left: -30px;
+        }
+    .searchfonctnumber{
+        color: white;
+    }
+    .searchfonctfonct i span{
+        margin: 0 1rem;
+    }
+    .searchfoncfoncWrapiconIcon{
+        color: grey;
+         margin: 30px;
+    }
+    .restaurant{
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .restaurant figure{
+        background-color: white;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 20px #0000002e;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition-duration: 0.1s;
+        height: 300px;
+        width: 90%;
+      }
+      .restaurant figure :hover{
+        transform: scale(1.02);
+      }
+      .restaurant img{
+        height: 75%;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+      .restaurant figcaption{
+          display: flex;
+          flex-direction:column;
+          align-items: flex-start;
+      }
+      .restaurant figcaption h3{
+        margin: 0.25rem 0.75rem 0 0.75rem;
+      }
+      .restaurant figcaption p{
+        margin: 0.25rem 0.75rem 0 0.75rem;
+      }
+      .wrapiconIcon{
+          position: absolute;
+      }
+      .wrapiconIcon :hover{
+          color:rgb(186, 61, 165);
+      }
+      footer{
+          width: 100%;
+          background-color: rgb(88,88,88);
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+      footer img{
+          height: 2rem;
+      }
+      footer div{
+          display: inline;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+      footer div i{
+          margin-right: 5px;
+      }
+    
+
+    }
+
+   
+}
