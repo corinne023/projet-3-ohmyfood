@@ -69,9 +69,13 @@
         font-size: 15px;
         display: flex;
         flex-direction: column;
+        margin: 10px;
+    }
+    .searchfonctionnement h2{
+        margin-left: 20px;
     }
     .searchfonctfonct{
-        height: 70px;
+        height: 40px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -117,20 +121,25 @@
         justify-content: flex-end;
         align-items: center;
     }
-    .restaurant figure{
+    .carte{
         background-color: white;
         border-radius: 1.25rem;
         box-shadow: 0 0 20px #0000002e;
         box-sizing: border-box;
         cursor: pointer;
+        text-decoration: none;
         transition-duration: 0.1s;
-        height: 300px;
+        height: 274px;
         width: 90%;
+        margin-bottom: 20px;
       }
-      .restaurant figure :hover{
+      .carte :hover{
         transform: scale(1.02);
       }
-      .restaurant img{
+      .restaurant h2{
+          margin-right: 310px;
+      }
+      .carte img{
         height: 75%;
         object-fit: cover;
         max-width: 100%;
@@ -138,7 +147,16 @@
         max-height: 100%;
         border-radius: 1rem 1rem 0 0;
       }
+      .carte span{
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: 8px;
+        position: absolute;
+        right: 50px;
+        margin-top: 30px;
+      }
       .restaurant figcaption{
+          color: black;
           display: flex;
           flex-direction:column;
           align-items: flex-start;
@@ -150,17 +168,28 @@
         margin: 0.25rem 0.75rem 0 0.75rem;
       }
       .wrapiconIcon{
+          cursor: pointer;
           position: absolute;
+          right: 70px;
+          font-size: 25px;
+          right: 70px;
+          margin-top: 15px;
+          color: grey;
       }
       .wrapiconIcon :hover{
+          transition-duration: 0.50s;
           color:rgb(186, 61, 165);
       }
       footer{
           width: 100%;
-          background-color: black;
+          background-color: #353535;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
+      }
+      footer h3{
+          color: white;
+          font-weight: 900;
       }
       footer img{
           height: 2rem;
