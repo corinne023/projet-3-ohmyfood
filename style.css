@@ -769,12 +769,10 @@
       }
     header{
         width: 100%;
+        text-align: center;
     }
     header img {
         height: 2rem;
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -821,6 +819,7 @@
         cursor: pointer;
         transition-duration: 0.1s;
         height: 40px;
+        margin-bottom: 20px;
     }
     .searchexplorer :hover{
         transition-duration: 0.1s;
@@ -838,8 +837,13 @@
     .searchfonctionnement h2{
         margin-left: 20px;
     }
+    .searchfonct{
+        display:flex;
+        flex-direction: row;
+    }
     .searchfonctfonct{
         height: 40px;
+        width: 300px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -848,7 +852,7 @@
         border: 1px solid #f2f2f2;
         border-radius: 2rem;
         margin-bottom: 25px;
-        margin-right: 50px;
+        margin-right: 80px;
         margin-left: 50px;
         padding: 10px;
         cursor: pointer;
@@ -880,10 +884,9 @@
     .restaurant{
         width: 100%;
         background-color: #F2F2F2;
-        display: flex;
-        flex-direction:column;
-        justify-content: flex-end;
-        align-items: center;
+    }
+    .groupecarte{
+        display:flex;
     }
     .carte{
         background-color: white;
@@ -893,15 +896,19 @@
         cursor: pointer;
         text-decoration: none;
         transition-duration: 0.1s;
-        height: 274px;
-        width: 90%;
+        height: 250px;
+        width: 600px;
         margin-bottom: 20px;
+        margin: 30px;
+        margin: 30px;
       }
       .carte :hover{
         transform: scale(1.02);
       }
       .restaurant h2{
-          margin-right: 310px;
+        margin-right: 0;
+        margin-left: 35px;
+        margin-top: 20px;
       }
       .carte img{
         height: 75%;
@@ -970,6 +977,234 @@
       } 
 
     }
+    /*version desktop page d'accueil*/
+        
+    body {
+        font-family:"sans-serif";
+        margin: 0;
+      }
+    header{
+        width: 100%;
+        text-align: center;
+    }
+    header img {
+        height: 4rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    main{
+        width: 100%;
+        margin-top: 0;
+    }
+    .searchbar{
+        font-size: 20px;
+        background-color: #f3f3f3;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchbar i{
+        margin-right: 10px;
+    }
+    section{
+        width: 100%;
+    }
+    .searchentete{
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .searchentete p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .searchexplorer{
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: rgb(146,61,186);
+        box-shadow: 0 0 20px #0000002e;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition-duration: 0.1s;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .searchexplorer :hover{
+        transition-duration: 0.1s;
+    }
+    .searchexplorer p{
+        padding: 50px;
+        font-size: 25px;
+    }
+    .searchfonctionnement{
+        background-color: white;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .searchfonctionnement h2{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .searchfonct{
+        display:flex;
+        flex-direction: row;
+    }
+    .searchfonctfonct{
+        height: 60px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F2F2F2;
+        box-shadow: 0 0 20px #0000002e;
+        border: 1px solid #f2f2f2;
+        border-radius: 2rem;
+        margin-bottom: 25px;
+        margin-right: 0;
+        margin-left: 50px;
+        padding: 15px;
+        cursor: pointer;
+        transition-duration: 0.1s;
+    }
+    .searchfonctfonct :hover{
+        color:rgb(186, 61, 165)
+    }
+    .searchfoncfoncWrapicon{
+        background-color: rgb(146,61,186);
+        border-radius: 100%;
+        min-height: 3rem;
+        min-width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         margin-left: -40px;
+        }
+    .searchfonctnumber{
+        color: white;
+        font-size: 20px;
+    }
+    .searchfonctfonct i span{
+        margin: 0 1rem;
+    }
+    .searchfoncfoncWrapiconIcon{
+        color: grey;
+         margin: 30px;
+         font-size: 20px;
+    }
+    .searchfonctTitle{
+        font-size: 20px;
+    }
+    .restaurant{
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+    .groupecarte{
+        display:flex;
+    }
+    .carte{
+        background-color: white;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 20px #0000002e;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-decoration: none;
+        transition-duration: 0.1s;
+        height: 300px;
+        width: 700px;
+        margin-bottom: 20px;
+        margin: 30px;
+        margin: 30px;
+      }
+      .carte :hover{
+        transform: scale(1.02);
+      }
+      .restaurant h2{
+          font-size: 30px;
+        margin-right: 0;
+        margin-left: 35px;
+        margin-top: 20px;
+      }
+      .carte img{
+        height: 75%;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+      .carte span{
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: 8px;
+        position: absolute;
+        right: 50px;
+        margin-top: 30px;
+      }
+      .restaurant figcaption{
+          font-size: 25px;
+          color: black;
+          display: flex;
+          flex-direction:column;
+          align-items: flex-start;
+      }
+      .restaurant figcaption h3{
+        margin: 0.25rem 0.75rem 0 0.75rem;
+      }
+      .restaurant figcaption p{
+        margin: 0.25rem 0.75rem 0 0.75rem;
+      }
+      .wrapiconIcon{
+          cursor: pointer;
+          position: absolute;
+          right: 70px;
+          font-size: 50px;
+          right: 70px;
+          margin-top: 15px;
+          color: grey;
+      }
+      .wrapiconIcon :hover{
+          transition-duration: 0.50s;
+          color:rgb(186, 61, 165);
+      }
+      footer{
+          font-size: 25px;
+          width: 100%;
+          background-color: #353535;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 30px;
+      }
+      footer h3{
+          color: white;
+          font-family: ;
+      }
+      footer div{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+      footer div a{
+          color:white;
+      }
+      footer div i{
+          margin-right: 5px;
+          color:white;
+      } 
+
+    
+    
      
          
     
