@@ -1,0 +1,188 @@
+
+    body{
+        font-family : "sans-serif" ;
+        margin: 0;
+      }
+    header {
+        width: 100%;
+        display: flex;
+    }
+    header  div {
+        display: flex;
+        justify-content: space-between;
+        text-align : center;
+    }
+    .lienindex {
+        padding-top : 20 px ;
+        padding-left : 10 px ;
+        color : noir;
+    }
+           
+    header  img {
+        height: 2rem ;
+        width: 60% ;
+        display: bloc;
+        margin-left: auto;
+        margin: auto;
+    }
+    img {
+        width: 100% ;
+        height: 250px ;
+        object-fit: cover;
+    }
+    .menu {
+        width: 100%;
+        margin-top: -4rem;
+        border-radius: 2 rem  2 rem  0  0 ;
+        background-color: #f2f2f2f2;
+        position: relative;
+        font-size: 10 px ;
+        width: 100 % ;
+    }
+    
+    .menu header {
+        display: flex;
+        align-items : center;
+        flex-direction : row;
+        justify-content : space-between;    
+    }
+    .menu h1 {
+        font-size: italic;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    .menubtn {
+        height: 2 rem ;
+        width: 30 px ;
+        background-color: transparent;
+        border: 0 solid transparent;
+        padding: 0 ;
+        margin-right: 45 px ;
+        display: flex;
+        align-items: centre;
+        justify-content: centre;
+        cursor: pointeur;
+    }
+    .searchfoncfoncWrapiconIcon {
+        font-size: 25px ;
+    }
+    
+    .entrée{
+        width: 100% ;
+        display: flex;
+        flex-direction: column;
+    }
+    .entrée H2{
+        margin-left: 10px;
+        border-bottom: 1px rgb (14,209,69) solid;
+        width: 8%;
+    }
+    .menudetail{
+        display: flex;
+        align-items: center;
+        background-color: blanc;
+        border-radius: 1,25rem ;
+        box-shadow: 0  0  20 px #0000002e;
+        cursor: pointeur;
+        transition-duration : 0,1 s ;
+        height: 60px;
+        margin: 10px;
+        padding: 10px;
+    }  
+    .menudetailtitre {
+        font-size: 12px;
+        padding: 1px;
+    }
+    .menuprix {
+        position: absolue;
+        right: 25px ;
+        margin-top: 30px ;
+    }
+    .menuvalide {
+        background-color: #99e2d0;
+        width: 4rem;
+        display: flex;
+        align-items: centre;
+        justify-content: centre;
+        transition-duration: 0,5s;
+    }
+    .menuvalidation {
+        height: 1,6rem;
+        width: 1,6rem ;
+        background-color: #fff ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotation(180degrés);
+        transition-duration: 0,5s;
+    }
+    .menuvalidationicon {
+        color: #99e2d0;
+    }
+    .plats {
+        width: 100%;
+        display: flex;
+        flex-direction: colonne;
+        justify-content: flex-start;
+    }
+    .plats  H2 {
+        margin-left: 20px;
+        border-bottom: 1px rgb(14,209,69)solid;
+        width: 8%;
+    }
+   
+    .desserts {
+        width: 100%;
+        display: flex;
+        flex-direction: colonne;
+        justify-content: flex-start;
+    }
+    .desserts  H2 {
+        margin-left: 20px;
+        border-bottom: 1px rgb(14,209,69)solid;
+        width: 8%;
+    }
+    
+    
+    .commande {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+    .commande :hover {
+        transition-duration: 0,1s;
+    }
+    .bouton de commande  {
+        border: 0;
+        padding: .75rem 1.5rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        border-radius: 100px;
+        color: #fff;
+        background-color: #686868;
+        background-image: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        transition-duration: .25s;
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+        cursor: pointer;
+    }
+    footer {
+        width: 100%;
+        background-color: #353535;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px;
+    }
+    footer h3 {
+        color: white;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer div a {
+        color: white;
+    }
+    
