@@ -205,25 +205,24 @@
 
 
 /*page 1234*/
+.entete{
+    padding: 1rem;
+}
 
-
-header  div {
+.entete div {
     display: flex;
-    justify-content: space-between;
-    text-align : center;
 }
 .lienindex {
-    padding-top : 20 px ;
-    padding-left : 10 px ;
-    color : noir;
+    padding-top : 10px;
+    padding-left : 10px;
+    color: black;
+    margin-right: 60px;
 }
        
-header  img {
-    height: 2rem ;
-    width: 60% ;
-    display: bloc;
-    margin-left: auto;
-    margin: auto;
+.logo {
+    font-family: Shrikhand,"cursive";
+     margin: 0;
+    text-align: center;
 }
 img {
     width: 100% ;
@@ -233,58 +232,57 @@ img {
 .menu {
     width: 100%;
     margin-top: -4rem;
-    border-radius: 2 rem  2 rem  0  0 ;
+    border-radius: 2rem  2rem 0 0;
     background-color: #f2f2f2f2;
     position: relative;
-    font-size: 10 px ;
-    width: 100 % ;
+    font-size: 10px;
+    width: 100%;
 }
 
 .menu header {
     display: flex;
-    align-items : center;
-    flex-direction : row;
-    justify-content : space-between;    
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;    
 }
 .menu h1 {
-    font-size: italic;
-    font-size: 25px;
-    margin-left: 15px;
+    font-family: Shrikhand,"cursive";
 }
 .menubtn {
-    height: 2 rem ;
-    width: 30 px ;
+    height: 2rem;
+    width: 30px;
     background-color: transparent;
     border: 0 solid transparent;
     padding: 0 ;
     margin-right: 45 px ;
     display: flex;
-    align-items: centre;
-    justify-content: centre;
+    align-items: center;
+    justify-content: center;
     cursor: pointeur;
 }
 .searchfoncfoncWrapiconIcon {
     font-size: 25px ;
 }
 
-.entrée{
+.entree{
     width: 100% ;
     display: flex;
     flex-direction: column;
 }
-.entrée H2{
+.entree H2{
+    font-weight: 400;
     margin-left: 10px;
-    border-bottom: 1px rgb (14,209,69) solid;
+    border-bottom: 1px rgb(14,209,69) solid;
     width: 8%;
 }
 .menudetail{
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 1,25rem ;
-    box-shadow: 0  0  20 px #0000002e;
-    cursor: pointeur;
-    transition-duration : 0,1 s ;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 20px #0000002e;
+    cursor: pointer;
+    transition-duration: 0.1s;
     height: 60px;
     margin: 10px;
     padding: 10px;
@@ -307,15 +305,15 @@ img {
     transition-duration: 0,5s;
 }
 .menuvalidation {
-    height: 1,6rem;
-    width: 1,6rem ;
+    height: 1.6rem;
+    width: 1.6rem ;
     background-color: #fff ;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100px;
     transform: rotation(180degrés);
-    transition-duration: 0,5s;
+    transition-duration: 0.5s;
 }
 .menuvalidationicon {
     color: #99e2d0;
@@ -327,6 +325,7 @@ img {
     justify-content: flex-start;
 }
 .plats H2 {
+    font-weight: 400;
     margin-left: 20px;
     border-bottom: 1px rgb(14,209,69)solid;
     width: 8%;
@@ -339,6 +338,7 @@ img {
     justify-content: flex-start;
 }
 .desserts  H2 {
+    font-weight: 400;
     margin-left: 20px;
     border-bottom: 1px rgb(14,209,69)solid;
     width: 8%;
