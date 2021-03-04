@@ -108,7 +108,6 @@
     .searchfoncfoncWrapiconIcon{
         color: grey;
         font-size: 20px;
-         margin: 30px;
     }
     .restaurant{
         width: 100%;
@@ -181,7 +180,7 @@
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          padding: 20px;
+
           
       }
       footer h3{
@@ -251,7 +250,7 @@ img {
 .menubtn {
     height: 2rem;
     width: 30px;
-    background-color: transparent;
+    background-color: rgba(147,86,220,.9);  
     border: 0 solid transparent;
     padding: 0 ;
     margin-right: 45 px ;
@@ -260,13 +259,9 @@ img {
     justify-content: center;
     cursor: pointeur;
 }
-.menubtn ::before, .searchfoncfoncWrapiconIcon{
-    position: absolute;
-    background-color: rgba(147,86,220,.9);
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
+
+    
+
 .searchfoncfoncWrapiconIcon {
     font-size: 25px ;
     transition-duration: .25s;
@@ -297,6 +292,7 @@ img {
     margin: 10px;
     padding: 10px;
 }  
+
 .menudetailtitre {
     font-size: 12px;
     padding: 1px;
@@ -320,9 +316,7 @@ img {
     justify-content: center;
     transition-duration: 0,5s;
 }
-.menuvalid :hover{
-    transform: scale(1.15)
-}
+
 .menuvalidation {
     height: 1.6rem;
     width: 1.6rem ;
@@ -336,6 +330,10 @@ img {
 }
 .menuvalidationicon {
     color: #99e2d0;
+}
+.menudetail:hover .menuvalide{
+    right: 0;
+
 }
 .plats {
     width: 100%;
@@ -384,12 +382,10 @@ img {
     cursor: pointer;
 }
 footer {
-    width: 100%;
     background-color: #353535;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 30px;
 }
 footer h3 {
     color: white;
