@@ -260,8 +260,19 @@ img {
     justify-content: center;
     cursor: pointeur;
 }
+.menubtn ::before, .searchfoncfoncWrapiconIcon{
+    position: absolute;
+    background-color: rgba(147,86,220,.9);
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
 .searchfoncfoncWrapiconIcon {
     font-size: 25px ;
+    transition-duration: .25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .entree{
@@ -282,7 +293,6 @@ img {
     border-radius: 1.25rem;
     box-shadow: 0 0 20px #0000002e;
     cursor: pointer;
-    transition-duration: 0.1s;
     height: 60px;
     margin: 10px;
     padding: 10px;
@@ -297,12 +307,21 @@ img {
     margin-top: 30px ;
 }
 .menuvalide {
+    position:absolute;
+    right: -40px;
     background-color: #99e2d0;
-    width: 4rem;
+    width: 3rem;
+    height: 5rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: 0,5s;
+}
+.menuvalid :hover{
+    transform: scale(1.15)
 }
 .menuvalidation {
     height: 1.6rem;
@@ -312,7 +331,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    transform: rotation(180degrés);
+    transform: rotate(180deg);
     transition-duration: 0.5s;
 }
 .menuvalidationicon {
