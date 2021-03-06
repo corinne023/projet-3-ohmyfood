@@ -281,7 +281,7 @@ img {
     border-bottom: 1px rgb(14,209,69) solid;
     width: 8%;
 }
-.menudetail{
+.menu-detail{
     display: flex;
     align-items: center;
     background-color: white;
@@ -293,16 +293,16 @@ img {
     padding: 10px;
 }  
 
-.menudetailtitre {
+.menu-detail-titre {
     font-size: 12px;
     padding: 1px;
 }
-.menuprix {
+.menu-prix {
     position: absolute;
     right: 25px ;
     margin-top: 30px ;
 }
-.menuvalide {
+.menu-valide {
     position:absolute;
     right: -40px;
     background-color: #99e2d0;
@@ -317,7 +317,7 @@ img {
     transition-duration: 0,5s;
 }
 
-.menuvalidation {
+.menu-validation {
     height: 1.6rem;
     width: 1.6rem ;
     background-color: #fff ;
@@ -328,10 +328,10 @@ img {
     transform: rotate(180deg);
     transition-duration: 0.5s;
 }
-.menuvalidationicon {
+.menu-validationicon {
     color: #99e2d0;
 }
-.menudetail:hover .menuvalide{
+.menu-detail:hover .menu-valide{
     right: 0;
 
 }
