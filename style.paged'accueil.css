@@ -7,12 +7,23 @@
     top: 0;
     background-color: transparent;
     animation: loader .01s;
+    animation-duration: 1s;
     animation-delay: 1.5s;
     animation-fill-mode: both;
     z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@keyframes loader{
+    from{
+        transform:scale(0);
+        opacity: 1;
+    }
+    to{
+        transform:scale(1);
+        opacity: 0;
+    }  
 }
 
 .loader{
@@ -45,12 +56,7 @@
         background-color: #99E2D0;
     }
 }
-@keyframes spinner{
-    from{width: 100%;}
-    25%{width: 25%;}
-    50%{width: 50%;}
-    to{width: 75%;}
-}
+
 main{
     width: 100%;
 }
@@ -214,236 +220,156 @@ section h1 {
       color:rgb(186, 61, 165);
   }
  
-  /*page1234*/
-  .entete{
-    padding: 1rem;
-}
 
-.entete div {
-    display: flex;
-}
-.lienindex {
-    padding-top : 10px;
-    padding-left : 10px;
-    color: black;
-    margin-right: 60px;
-}
-       
-.logo {
-    font-family: Shrikhand,"cursive";
-     margin: 0;
-    text-align: center;
-}
-img {
-    width: 100% ;
-    height: 250px ;
-    object-fit: cover;
-}
-.menu {
-    width: 100%;
-    margin-top: -4rem;
-    border-radius: 2rem  2rem 0 0;
-    background-color: #f2f2f2f2;
-    position: relative;
-    font-size: 10px;
-    width: 100%;
-}
+  @media all and (max-width: 1022px) and (min-width: 481px){
+      section h1{
+          font-size: 30px;
+      }
+      .searchentete p{
+          font-size: 20px;
+      }
+      .searchexplorer{
+          height: 30px;
+          padding-top: 20px;
+      }
+      .searchfonctionnement h2{
+          margin-left: 20px;
+      }
+      .searchfonctfonct{
+          margin-right: 50px;
+          margin-left: 50px;
+      }
+      .searchfoncfoncWrapicon{
+          min-height: 2rem;
+          min-width: 2rem;
+          margin-left: -30px;
+      }
+      .searchfoncfoncWrapiconIcon{
+          margin: 30px;
+      }
+      .restaurant h2{
+          margin-right: 310px;
+      }
+      .wrapiconIcon{
+          right: 70px;
+          margin-top: 15px;
+      }
 
-.menu header {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;    
-}
-.menu h1 {
-    font-family: Shrikhand,"cursive";
-}
-.menu-btn {
-    height: 2rem;
-    width: 30px; 
-    border: 0 solid transparent;
-    padding: 0 ;
-    margin-right: 45 px ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointeur;
-}
+  }
+/*version tablette*/
+  @media all and (max-width: 1300px) and (min-width: 1023px){
+      main{
+          width: 100%;
+          margin-top: 0;
+      }
+      section{
+          width: 100%;
+      }
+      section h1{
+          font-size: 30px;
+      }
+      .searchentete p{
+          font-size: 20px;
+      }
+      .searchexplorer{
+          height: 40px;
+          margin-bottom: 20px;
+      }
+      .searchexplorer p{
+          padding: 20px;
+      }
+      .searchfonctionnement{
+          font-size: 15px;
+      }
+      .searchfonctionnement h2{
+          margin-left: 20px;
+      }
+      .searchfonct{
+          display:flex;
+          flex-direction: row;
+      }
+      .searchfonctfonct{
+          width: 300px;  
+          margin-right: 80px;
+          margin-left: 50px;
+      }
+      .searchfoncfoncWrapicon{
+          min-height: 2rem;
+          min-width: 2rem;
+          margin-left: -30px;
+      }
+      .searchfoncfoncWrapiconIcon{
+          margin: 20px;
+      }
+      .restaurant{
+          width: 100%;
+      }
+      .groupecarte{
+          display: flex;
+      }
+      .carte{
+        height: 250px;
+        width :  600px;
+        margin-bottom: 20px;
+        margin: 30px;
+      }
+      .restaurant h2{
+        margin-right: 0;
+        margin-left: 35px;
+        margin-top: 20px;  
+      }
+      .wrapiconIcon{
+          right: 70px;
+          margin-top: 15px;
+      }
 
-.searchfoncfonc-Icon {
-    position: absolute;
-    top: 25px;
-    font-size: 25px ;
-    transition-duration: .25s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.menu-btn:hover{
-    color: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    box-shadow: transparent solid;
-    transition-duration: 0.2s;
+  }
 
-}
-.searchfoncfon-Icons{
-    font-size: 25px;
-    opacity: 0;
-    cursor: pointer;
-}
-
-
-.entree{
-    width: 100% ;
-    display: flex;
-    flex-direction: column;
-    animation-name: entre;
-    transform:scale(1);
-    animation-duration: 3s; 
-}
-@keyframes entre{
-    from{
-        transform:scale(0);
+  /*version pc*/
+  @media all and (max-width: 2560px) and (min-width: 1301px){
+      main{
+          width: 100%;
+      }
+      .section{
+          width: 100%;
+      }
+      .searchfonct{
+          display: flex;
+          flex-direction: row;
+      }
+      .searchfonct{
+        display:flex;
+        flex-direction: row;
     }
-    to{
-        transform:scale(1);
-    }   
-}
-.entree H2{
-    font-weight: 400;
-    margin-left: 10px;
-    border-bottom: 1px rgb(14,209,69) solid;
-    width: 8%;
-}
-.menu-detail{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 20px #0000002e;
-    cursor: pointer;
-    height: 60px;
-    margin: 10px;
-    padding: 10px;
-   
-}  
-
-
-
-.menu-detail-titre {
-    font-size: 12px;
-    padding: 1px;
-}
-.menu-prix {
-    position: absolute;
-    right: 25px ;
-    margin-top: 30px ;
-}
-.menu-valide {
-    opacity: 0;
-    position:absolute;
-    right: -40px;
-    background-color: #99e2d0;
-    width: 3rem;
-    height: 5rem;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 1000ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0,5s;
-}
-
-
-.menu-validation {
-    height: 1.6rem;
-    width: 1.6rem ;
-    background-color: #fff ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: 0.5s;
-}
-.menu-validationicon {
-    color: #99e2d0;
-}
-.menu-detail:hover .menu-valide{
-    right: 0;
-    opacity: 1;
-
-}
-.plats {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    animation-name: plat;
-    transform:scale(1);
-    animation-duration: 2s; 
-}
-@keyframes plat{
-    from{
-        transform:scale(0);
+    .searchfonctfonct{
+        width: 300px;  
+        margin-right: 80px;
+        margin-left: 50px;
     }
-    to{
-        transform:scale(1);
-    }   
-}
-
-.plats H2 {
-    font-weight: 400;
-    margin-left: 20px;
-    border-bottom: 1px rgb(14,209,69)solid;
-    width: 8%;
-}
-
-.desserts {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    animation-name: dessert;
-    transform:scale(1);
-    animation-duration: 1s; 
-}
-@keyframes dessert{
-    from{
-        transform:scale(0);
+    .searchfoncfoncWrapicon{
+        min-height: 2rem;
+        min-width: 2rem;
+        margin-left: -30px;
     }
-    to{
-        transform:scale(1);
-    }   
-}
+    .searchfoncfoncWrapiconIcon{
+        margin: 20px;
+    }
+    .restaurant{
+        width: 100%;
+    }
+      .groupecarte{
+          display: flex;
+          margin
+      }
+      .carte{
+          height: 300px;
+          width: 700px;
+          margin: 10px;
+      }
+      .restaurant h2{
+          font-size: 30px;
+      }
 
-.desserts  H2 {
-    font-weight: 400;
-    margin-left: 20px;
-    border-bottom: 1px rgb(14,209,69)solid;
-    width: 8%;
-}
-.commande {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 0;
-}
-.commande :hover {
-    transition-duration: 0,1s;
-}
-.commande button{
-    border: 0;
-    padding: .75rem 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 100px;
-    color: #fff;
-    background-color: #686868;
-    background-image: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
-    transition-duration: .25s;
-    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-    cursor: pointer;
-}
-  
 
+      }
+  }
