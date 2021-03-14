@@ -5,15 +5,25 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: transparent;
-    animation: loader .01s;
-    animation-duration: 1s;
-    animation-delay: 1.5s;
-    animation-fill-mode: both;
+    opacity: 0.5;
+    animation: conteanair;
+    display: none;
+    background-color: black; 
     z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.loader{
+    display: flex; 
+    width: 200px;
+    border-radius: 100%;
+    justify-content: space-between;
+    animation: loader 2s infinite;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 @keyframes loader{
     from{
@@ -24,13 +34,6 @@
         transform:scale(1);
         opacity: 0;
     }  
-}
-
-.loader{
-    display: flex; 
-    width: 200px;
-    border-radius: 100%;
-    justify-content: space-between;
 }
 .load_bar{
     background-color: rgb(161, 47, 255);
