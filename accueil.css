@@ -6,13 +6,28 @@
     left: 0;
     top: 0;
     opacity: 0.5;
-    animation: conteanair;
+    animation: contenair;
+    animation-delay: 1.5s;
+    animation-timing-function: ease;
+    animation-direction:normal;
+    animation-play-state: running;
+    animation-fill-mode: both;
     display: none;
-    background-color: black; 
+    background-color: white; 
     z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@keyframes contenair{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform:scale(0);
+        opacity:0;
+    }
 }
 
 
@@ -36,7 +51,6 @@
     }  
 }
 .load_bar{
-    background-color: rgb(161, 47, 255);
     height: 20px;
     width: 20px;
     animation-name: spinner;
@@ -211,16 +225,36 @@ section h1 {
   .restaurant figcaption p{
     margin: 0.25rem 0.75rem 0 0.75rem;
   }
-  .wrapiconIcon{
-      cursor: pointer;
+  .carte-btn{
       position: absolute;
-      right: 20px;
-      font-size: 25px;
-      margin-top: 10px;
+      left: 360px;
+    height: 2rem;
+    width: 30px; 
+    background-color: transparent;
+    border: 0 solid transparent;
+    padding: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointeur;
+    transition: transform 0.5ms;
   }
-  .wrapiconIcon :hover{
-      transition-duration: 0.50s;
-      color:rgb(186, 61, 165);
+  .wrapiconIcon{
+      position: absolute;
+      font-size: 25px;
+      margin-top: 10px;   
+  }
+  .wrapicon-Icon{
+      opacity:0;
+  }
+  .carte-btn:hover{
+      opacity: 1;
+      transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
   }
  
 
@@ -312,7 +346,6 @@ section h1 {
       }
       .carte{
         height: 250px;
-        width :  600px;
         margin-bottom: 20px;
         margin: 30px;
       }
@@ -362,7 +395,6 @@ section h1 {
     }
       .groupecarte{
           display: flex;
-          margin
       }
       .carte{
           height: 300px;
@@ -375,4 +407,4 @@ section h1 {
 
 
       }
-  }
+  

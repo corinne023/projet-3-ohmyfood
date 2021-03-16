@@ -47,6 +47,7 @@ img {
 .menu-btn {
     height: 2rem;
     width: 30px; 
+    background-color: transparent;
     border: 0 solid transparent;
     padding: 0 ;
     margin-right: 45 px ;
@@ -61,26 +62,29 @@ img {
     top: 25px;
     font-size: 25px ;
     transition-duration: .25s;
-    background-color: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-.menu-btn:hover{
-   
-    box-shadow: transparent solid;
-    transition-duration: 0.2s;
 
+.menu-btn:hover{
+    opacity: 1;
+    transition: .5s;
+transition-property: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0s;
+background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
+   
 }
+
 .searchfoncfon-Icons{
     font-size: 25px;
-
+    mix-blend-mode: lighten;
     cursor: pointer;
 }
-.searchfoncfon-Icons:hover{
-    opacity: 0;
-}
+
 
 
 .entree{
@@ -118,8 +122,6 @@ img {
    
 }  
 
-
-
 .menu-detail-titre {
     font-size: 12px;
     padding: 1px;
@@ -127,7 +129,10 @@ img {
 .menu-prix {
     position: absolute;
     right: 25px ;
-    margin-top: 30px ;
+    margin-top: 30px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
 }
 .menu-valide {
     opacity: 0;
@@ -142,7 +147,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 0,5s;
 }
 
 
@@ -160,11 +164,14 @@ img {
 .menu-validationicon {
     color: #99e2d0;
 }
-.menu-detail:hover .menu-valide{
-    right: 0;
-    opacity: 1;
-
+.menu-detail:active .menu-prix{
+    margin-left: 20px;
 }
+.menu-detail:hover .menu-valide{
+    margin-right: 40px;
+    opacity: 1;
+}
+
 .plats {
     width: 100%;
     display: flex;
@@ -237,7 +244,7 @@ img {
 }
   
 /*page mobile 1234*/
-@media all and (max-width: 2560px) and (min-width: 1024px){
+@media all and (min-width: 1024px){
     .entete{
         width: 100%;
         font-size: 20px;
@@ -246,10 +253,36 @@ img {
     main{
         width: 100%;
     }
-    menu{
+    
+    .menu h1{
+        font-size: 25px;
+    }    
+    .menu-btn{
+        height: 4rem;
+        width: 50px;
+    }
+    .searchfoncfon-Icons{
+        top: 0;
+        font-size: 30px;
+    }
+    .carte-detail{
+        display:flex;
+    }  
+    .entree h2{
         font-size: 20px;
-        
-        }
+    }  
+    .menu-detail{
+        font-size: 15px;
+    }
+    .plats h2{
+        font-size: 20px;
+    }
+    .desserts h2{
+        font-size: 20px;
+    }
+    .commande button{
+        font-size: 20px;
+    }
     
 
 

@@ -45,6 +45,12 @@
     .script{
         margin-right: 10px;
     }
+
+    @media all and (min-width: 1024px){
+        footer{
+            font-size: 20px;
+        }
+    }  
   
 
     
