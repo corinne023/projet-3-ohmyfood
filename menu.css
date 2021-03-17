@@ -127,6 +127,9 @@ background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
     padding: 1px;
 }
 .menu-detail-titre p{
+    width: 50px;
+    white-space:nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
     transform: 30ms;
 
@@ -174,7 +177,7 @@ background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
 
 .menu-detail:hover .menu-prix {transform: translateX(-150%) scale(1);}
 .menu-detail:hover .menu-valide{margin-right: 40px; opacity: 1;}
-.menu-detail:hover .menu-detail-titre p{ transform: translateX(-50%) scale(1) ;
+.menu-detail:hover .menu-detail-titre p{ width: 30px;
 
 }
     
