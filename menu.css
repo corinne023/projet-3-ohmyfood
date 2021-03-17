@@ -126,11 +126,16 @@ background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
     font-size: 12px;
     padding: 1px;
 }
+.menu-detail-titre p{
+    text-overflow: ellipsis;
+    transform: 30ms;
+
+}
 .menu-prix {
     position: absolute;
     right: 25px ;
     margin-top: 30px;
-    transform: scale(1);
+    transform: translateX(-30px) 330ms;
     transition-property: transform;
     transition-duration: 1000ms;
 }
@@ -139,9 +144,11 @@ background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
     position:absolute;
     right: -40px;
     background-color: #99e2d0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     width: 3rem;
     height: 5rem;
-    transform: scale(1);
+    transform: transform 330ms ease-in-out;
     transition-property: transform;
     transition-duration: 1000ms;
     display: flex;
@@ -158,19 +165,19 @@ background: linear-gradient( 0deg ,rgba(147,86,220,.9),rgba(255,121,218,.9));
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition-duration: 0.5s;
 }
 .menu-validationicon {
     color: #99e2d0;
 }
-.menu-detail:active .menu-prix{
-    margin-left: 20px;
+
+.menu-detail:hover .menu-prix {transform: translateX(-150%) scale(1);}
+.menu-detail:hover .menu-valide{margin-right: 40px; opacity: 1;}
+.menu-detail:hover .menu-detail-titre p{ transform: translateX(-50%) scale(1) ;
+
 }
-.menu-detail:hover .menu-valide{
-    margin-right: 40px;
-    opacity: 1;
-}
+    
 
 .plats {
     width: 100%;
